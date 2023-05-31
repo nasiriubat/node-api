@@ -11,14 +11,14 @@ exports.getAll = async (req, res) => {
 };
 
 exports.store = async (req, res) => {
-    const { name, age } = req.body;
+    const { title, description } = req.body;
     
-    if (!name || !age) {
-        return res.status(400).json({ message: 'Name and age are required fields.' });
+    if (!title || !description) {
+        return res.status(400).json({ message: 'title and description are required fields.' });
       }
     const data = new Model({
-        name,
-        age
+        title,
+        description
     })
 
     try {
@@ -61,7 +61,7 @@ exports.delete = async (req, res) => {
     try {
         const id = req.params.id;
         const data = await Model.findByIdAndDelete(id)
-        res.send(`Document with ${data.name} has been deleted.`)
+        res.send(`Document with ${data.title} has been deleted.`)
     }
     catch (error) {
         res.status(400).json({ message: error.message })
