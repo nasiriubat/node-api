@@ -1,7 +1,7 @@
-# node-api
+
 A simple node js api project using node,express and mongodb
 
-INSTALLATION:
+Installation:
 -------------
 
 1. clone this repository
