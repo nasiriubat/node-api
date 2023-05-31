@@ -14,8 +14,13 @@ API endpoints:
 //post module
 
 Get all posts                       | GET               | http://localhost:3000/api/getAll
+
 Create new post                     | POST              | http://localhost:3000/api/post
+
 Get single posts                    | GET               | http://localhost:3000/api/getOne/id
+
 Update post                         | PATCH             | http://localhost:3000/api/update/id
+
 Delete post                         | DELETE            | http://localhost:3000/api/delete/6477003c5174619263d86d11
+
 
