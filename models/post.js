@@ -12,4 +12,4 @@ const dataSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Data', dataSchema)
+module.exports = mongoose.model('Post', dataSchema)
